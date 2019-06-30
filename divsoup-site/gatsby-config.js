@@ -1,3 +1,8 @@
 module.exports = {
-  plugins: ['gatsby-plugin-emotion'],
+  siteMetadata: {
+    title: 'Div Soup Blog',
+    description:
+      'A coders blog that includesm tutorials on React, Gatsby, etc.',
+  },
+  plugins: ['gatsby-plugin-emotion', 'gatsby-plugin-react-helmet'],
 };
