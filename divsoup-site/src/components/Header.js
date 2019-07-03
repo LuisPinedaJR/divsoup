@@ -13,7 +13,8 @@ const Navlink = styled(Link)`
   text-decoration: none;
 
   &.current-page {
-    border-bottom: 2px solid #222;
+    color: #f16722;
+    border-bottom: 2px solid #f8d1be;
   }
   &:last-of-type {
     margin-right: 0;
@@ -23,25 +24,25 @@ const Navlink = styled(Link)`
 const Header = () => (
   <header
     css={css`
-      background: #eee;
-      border-bottom: 1px solid #ddd;
+      background: #white;
+      border-bottom: 1px solid #f16722;
       display: flex;
       justify-content: space-between;
       padding: 0.5rem calc((100vw - 550px - 0.5rem) / 2);
     `}
   >
     <Navlink to="/" fontWeight="bold">
-      DivSoup
+      Div Soup
     </Navlink>
     <nav
       css={css`
         margin-top: 0;
       `}
     >
-      <Navlink to="/" activeClassName="current-Page">
-        Talks
+      <Navlink to="/" activeClassName="current-page">
+        Home
       </Navlink>
-      <Navlink to="/about" activeClassName="current-Page">
+      <Navlink to="/about" activeClassName="current-page">
         About Me
       </Navlink>
     </nav>

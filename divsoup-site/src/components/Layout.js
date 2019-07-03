@@ -18,7 +18,7 @@ const Layout = ({ children }) => {
           /* lobotamized owl selecto, every sibling selector gets the below properties..*/
           margin-top: 1rem;
         }
-
+        
         html,
         body{
           margin:0,
@@ -49,6 +49,12 @@ const Layout = ({ children }) => {
         }
         li{
           margin-top: 0.25rem;
+        }
+        a{
+          color: #F16722;
+          &:hover{
+            color: #F8D1BE;
+          }
         }
       `}
       />
