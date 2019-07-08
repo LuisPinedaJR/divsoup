@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import { Link, graphql, useStaticQuery } from 'gatsby';
+import BackgroundImage from 'gatsby-background-image';
 
-const ImageBackground = styled('div')`
-  background-image: url('/images/soupbowlspoon.svg');
+const ImageBackground = styled(BackgroundImage)`
   background-position: top 0% center;
   background-size: cover;
   height: 50vw;
@@ -42,6 +42,7 @@ const TextBox = styled('div')`
 `;
 
 const Hero = () => {
+  const { image } = useStaticQuery(graphql``);
   return (
     <ImageBackground>
       <TextBox>
